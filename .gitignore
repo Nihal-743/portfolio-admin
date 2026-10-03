@@ -1,0 +1,9 @@
+# database (content, enquiries, visitor stats, login) - never commit
+data/*.db
+data/*.db-wal
+data/*.db-shm
+
+# local stuff
+.vscode/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,15 @@
+# index.php first
+DirectoryIndex index.php index.html
+
+Options -Indexes
+
+# never serve the database or php includes directly
+<FilesMatch "\.(db|db-wal|db-shm|sqlite)$">
+  Require all denied
+</FilesMatch>
+
+# resume always goes through cv.php so views get counted
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^cv/Nihal_Resume\.pdf$ cv.php [L]
+</IfModule>
