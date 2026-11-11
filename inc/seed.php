@@ -32,7 +32,7 @@ function seed_content($pdo)
         'fact_location' => 'Delhi, Noida, Gurugram',
 
         'work_sub'  => 'Real client projects, all live right now. Click any card to open the site.',
-        'work_more' => "That's 14 out of 50+. Happy to show you the rest on a call.",
+        'work_more' => "That's 15 out of 50+. Happy to show you the rest on a call.",
         'exp_sub'   => '1.5+ years building websites at an agency. Before that, two years in logistics with Blue Dart.',
         'skills_sub' => "Front-end is what I do every day. Things marked basic I can work with and fix, but I'm still learning them.",
 
@@ -68,6 +68,7 @@ function seed_content($pdo)
         ['AHK Tips', 'https://ahktips.com', 'other', 'Finance', 0, 'img/work/ahktips.jpg'],
         ['Madfrog', 'https://www.madfrog.in', 'shop', 'E-commerce', 0, 'img/work/madfrog.jpg'],
         ['Bonjour India Travel', 'https://www.bonjourindiatravel.com', 'travel', 'Tour & travel', 0, 'img/work/bonjourindiatravel.jpg'],
+        ['Adwik Divinee', 'https://www.adwikdivinee.com', 'shop', 'E-commerce', 0, 'img/work/adwikdivinee.jpg'],
     ];
     $st = $pdo->prepare('INSERT INTO projects (title, url, category, tag, scratch, image, sort) VALUES (?, ?, ?, ?, ?, ?, ?)');
     foreach ($projects as $i => $p) {
